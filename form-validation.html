@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Real time form validation</title>
+    <link rel="stylesheet" href="form.css" type="text/css" />
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <form action="www.google.com" target="_self" method="post">
+
+            <div id="success-message">Sign up is successful</div>
+            <div class="error-message"></div>
+
+            <div class="form-element">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="eg. yourname@gmail.com" />
+                <div class="error-message" id="email-error">Your e-mail address is invalid</div>
+            </div>
+
+            <div class="form-element">
+                <label for="phone">Telephone</label>
+                <input type="text" name="telephone" id="phone" placeholder="eg. 36301234567" />
+                <div class="error-message" id="phone-error">Your telephone number is invalid</div>
+            </div>
+
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="form-element">
+                <label for="c-password">Corfirm password</label>
+                <input type="password" name="c-password" id="c-password" />
+                <div class="error-message" id="password-error">Your passwords don't match</div>
+            </div>
+
+            <div class="form-element">
+                <input type="submit" id="submit-btn" value="Sign up" disabled />
+            </div>
+
+        </form>
+
+    </div>
+    
+
+</body>
+</html>
